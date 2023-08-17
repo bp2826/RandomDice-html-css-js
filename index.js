@@ -11,3 +11,11 @@ imageArray.push('./images/dice6.png');
 
 document.querySelector(".img2").setAttribute('src', imageArray[d2]);
 document.querySelector(".img1").setAttribute('src', imageArray[d1]);
+
+if(d1>d2){
+    document.querySelector('h1').innerHTML=("🚩Player 1 Wins!🚩");
+}else if(d1<d2){
+    document.querySelector('h1').innerHTML=("🚩Player 2 Wins!🚩");
+}else {
+    document.querySelector('h1').innerHTML=("🚩Draw🚩");
+}
